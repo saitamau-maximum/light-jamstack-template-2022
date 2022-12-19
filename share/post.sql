@@ -1,8 +1,8 @@
-CREATE TABLE IF NOT EXISTS `user` {
+CREATE TABLE IF NOT EXISTS `post` {
   `id` int(11) PRIMARY KEY NOT NULL,
-  `username` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `body` text NOT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
+  `user_id` int(11) NOT NULL,
 } ENGINE=InnoDB  DEFAULT CHARSET=latin1;
